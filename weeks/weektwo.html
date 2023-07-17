@@ -10,29 +10,9 @@
     <p>In week two i learn about <b>Tables</b> and <b>forms</b>. </p>
     <br>
 
-    <p>This is a simple table</p>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Progress</th>
-        </tr>
-
-        <tr>
-            <td>Lirim</td>
-            <td>Ahmeti</td>
-            <td>10% html</td>
-
-        </tr
-
-        
-       
-    </table>
-     <p>This is a simple table</p>
-    <br>
-    <table border="1">
+    <table border="1" cellpadding="23" width="100%">
             <tr>
-                <th colspan="3" bgcolor="gray">Table</th>
+                <th colspan="3" bgcolor="lightblue">This is a simple table</th>
             </tr>
             <tr>
                 <th>Name</th>
@@ -43,9 +23,203 @@
             <tr>
                 <td>Lirim</td>
                 <td>Ahmeti</td>
-                <td>10% html</td>
-    
+                <td>70% html</td>
             </tr>
+    </table>
+ <br><br>
+        <table border="1" width="100%">
+            <tr>
+                <th colspan="4" bgcolor="lightblue">This is a more complicated table</th>
+            </tr>
+            <tr height="100">
+                <td  width="100" bgcolor="black"></td>
+                <td width="100" ></td>
+                <td width="100" ></td>
+                <td  width="100"bgcolor="black"></td>
+                
+            </tr>
+    
+            <tr tr height="100" width="100">
+                <td colspan="3"><h3>Lirim Ahmeti</h3><p>In this table i have used the <b>height/width</b> attributes for getting the desired size of the table and <b>colspan/rowspan</b> attributes for merging colums and rows!</p></td>
+            
+                <td></td>
+            </tr>
+                
+            <tr tr height="100">
+                <td width="100"></td>
+                <td width="100" colspan="2" align="center"><img src="/images/digital solutions.png" alt="" width="100"></td>
+                <td width="100"></td>
+            </tr></table>
+            <br><br>
+            
+            
+            <table border="1" width="100%">
+                <tr>
+                    <td width="102"><img src="/images/myphoto.png" alt="Lirim Ahmeti's portrait photo" width="100"></td>
+                    <td valign="top" colspan="2">
+                        <h3 >Lirim Ahmeti</h3> <p>i have combined the things i learnd about tables and <b>created a CV</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" bgcolor="lightgrey"><h3>Social Media</h3></td>
+                </tr>
+                <tr align="center">
+                    <td><a href="https://www.instagram.com/lirim.ahmeti0/">Instagram</a></td>
+                    <td><a href="https://www.facebook.com/profile.php?id=100086978270281">Facebook</a></td>
+                    <td><a href="https://www.youtube.com/channel/UC6cEtabeqqybbh8B7bBZdcw">Youtube</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        
+                        <ul>
+                            <h3>Education</h3>
+                            
+                            <li>
+                                University "Kadri Zeka" CS Bachelor 2022
+                            </li>
+                            <li>
+                                SH.M.P "Jonuz Zejnullahu" Informatik 
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr bgcolor="lightgrey" align="center">
+                    <td colspan="3">
+                        <h3>Skills</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>python</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Premiere</li>
+                            <li>After Effects</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>English: Fluent</li>
+                            <li>Albanian: First Language</li>
+                        </ul> 
+                    </td>
+                </tr>
+            </table>
+    
+    
+    
+    
+    
         </table>
+        <fieldset>
+            <legend><H3>Fill up this form so i can reach back to you!</H3></legend>
+        <form action="#" autocomplete="on">
+    
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Name*" required="required" minlength="3" maxlength="15" id="name">
+    
+            
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email*" required="required" >
+            <br><br>
+            
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="044 123 123">
+            <br><br>
+    
+            <label for="msg">Message:</label>
+    
+            <br>
+            <textarea name="message" id="msg" cols="20" rows="3" placeholder="Type a message"></textarea>
+            <fieldset>
+                <legend>Who are you?</legend>
+                <select name="Who are you?" id="slc" value="Individual" required>
+                    <option value="Individ">Individual</option>
+                    <option value="Business">Business</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+        </fieldset>
+        <p> I have also learned that if we use the attribute <b>method="post"</b> the filled info <b>wont get written on the url</b> of our website<br>
+        but if we use the attribute <b>method="get" which is used by default</b> the filled info <b>will be written into the url</b> of our website</p>
+        <fieldset>
+            <legend>I learned how to create: </legend>
+                <h3>Radio Forms...</h3>
+                <form action="#">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+
+                <input type="radio" id="python" name="fav_language" value="Python">
+                <label for="python">Python</label><br>
+                
+                <h3>Checkbox forms...</h3>
+
+                <input type="checkbox" id="htmlch" name="fav_languages" value="HTML">
+                <label for="htmlch">HTML</label><br>
+                <input type="checkbox" id="cssch" name="fav_languages" value="CSS">
+                <label for="cssch">CSS</label><br>
+                <input type="checkbox" id="py" name="fav_languages" value="Python">
+                <label for="py">Python</label><br>
+
+                <h3>"Upload" files...</h3>
+                <input type="file" name="image" id="12">
+
+                <h3>Request a date/time...</h3>
+                <input type="date" name="birthdate" id="bday"><br><br>
+            
+                <input type="time" name="time" id="time"><br><br>
+                
+
+                <h3>Choose a color...</h3>
+                <label for="color">Favorite color</label>
+                <input type="color" name="color" id="color">
+                
+                <h3>Progress bar...</h3>
+                <progress></progress><br>
+                <progress min="0" max="100" value="23"></progress>
+              
+                <h3>Meter bar... <br>which can look cool!</h3>
+                <label for="meter_bar">Low:</label>
+                <meter id="meter_bar"
+                min="0"
+                max="100"
+                low="30" high="70" optimum="80"
+                value="20"
+                ></meter><br>
+                <label for="meter_bar1">Medium:</label>
+                <meter id="meter_bar1"
+                min="0"
+                max="100"
+                low="30" high="70" optimum="80"
+                value="40"
+                ></meter><br>
+                <label for="meter_bar2">High:</label>
+                <meter id="meter_bar2"
+                min="0"
+                max="100"
+                low="30" high="70" optimum="80"
+                value="85"
+                >
+
+           
+
+                
+            </form>
+        </fieldset>
+    </body>
 </body>
 </html>
