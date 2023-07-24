@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+     h1 + p {
+        color:red;
+     }
+     p > span{
+        color: red;
+     }
+      h3{
+        color: gold;
+        background-color: rgb(87, 87, 87);
+        position: fixed;
+        padding: 12px;
+        border-radius: 8px;
+      }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Selectors</h1>
+    <p>In this week we learned a little bit about css and how it is the key to give webpages style, colors, layots and make them visually appealing to our eyes. <br>
+    We were told to think about html as being the bones of a webpage (structure), and css as being the skin, clothes and the rest of the things that make a website visually better.</p> <p>this is the second paragraph and it will not be affected by css if i use the + selector. <br>But if i want all of the paragraph that come after the h1 to be affected by css
+        i can use the ~ selector!</p>
+
+    <p>This is another test paragraph which it contains a span tag <span>here</span> and another span here inside a bold tag <b><span>here2</span></b><br>
+    in these example only the first and direct child of p which is the kind of span will be affected by css by using the > selector! <br>
+If i want to affect any span that is inside a paragraph without taking in consideration of how they are nested i can just do this: p span. This will affect all of spans inside paragraphs.</p>
+        <h3>This is a test text and i think it looks cool</h3>
+
+    
+</body>
+</html>
