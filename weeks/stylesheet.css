@@ -21,7 +21,7 @@ header{
     font-weight: lighter;
     
   }
-  .container{
+  .container-left , .container-right{
     background-color: #F5EFED;
     color: #0F0A0A;
     width: 70%;
@@ -29,29 +29,32 @@ header{
     padding: 12px;
     padding-left: 30px; 
     border-radius: 14px;
+    flex-basis: 50%;
+    margin-left: 30px;
+    
     
   }
-  .container h1{
+  .container-left h1, .container-right h1{
     text-align: center;
   }
-  .container1{
-    background-color: #F5EFED;
-    color: #0F0A0A;
-    width: 70%;
-    max-width: 600px;
-    padding: 12px;
-    padding-left: 30px; 
-    border-radius: 14px;
-    margin-left: 3%;
-  }
-  .container1 h1{
-    text-align: center;
-  }
+  
   td > li {
     list-style: none;
     color: #2292A4;
     font-weight: bold;
   }
+  @media (max-width: 768px){
+    .parent{
+        flex-direction: column;
+    }
+    .container-left, .container-right{
+        flex-basis: 100%;
+        width: 90%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+  }
+    
   .part2{
     background-color: #F5EFED;
     width: 80%;
