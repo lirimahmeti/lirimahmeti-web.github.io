@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;700&display=swap" rel="stylesheet">
     <style>
+        *::selection{
+            background-color: #2292a4;
+            color: white;
+        }
         h1{
             font-family: 'Mukta', sans-serif;
         }
@@ -20,7 +24,15 @@
         }
         a{
             font-family: 'Mukta', sans-serif;
+            color: #2292a4;
         }
+        a:hover{
+            color: #2293a499;
+        }
+        a:active{
+            color: #12464e;
+        }
+        
         h1 span{
             background-color: #2293a42f;
             border-radius: 20px;
@@ -33,7 +45,7 @@
             
             width: fit-content;
             margin: auto;
-            margin-top: 150px;
+            margin-top: 0px;
             display: flex;
             padding: -15px 15px 0px -15px;
         }
@@ -56,6 +68,7 @@
             margin-top: -30px;
             font-family: 'Mukta', sans-serif;
             line-height: 60px;
+        
         }
         h1{
             font-size: 50px;
@@ -97,10 +110,19 @@
             padding: 25px 0px 25px 25px;
             
         }
-        .contactform{
-            ;
+        .container3{
+            background-color: aliceblue;
             width: 70%;
             margin: auto;
+        }
+        .contactform{
+            
+            width: 40%;
+            background-color: red;
+            display: inline-block;
+        }
+        .map{
+            display: inline-block;
         }
         fieldset{
             border-radius: 20px;
@@ -117,7 +139,18 @@
         #fieldset2{
             width: fit-content;
         }
-        
+        #list{
+            background-color: #2293a42f;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: ;
+        }
+        #list2{
+            background-color: #2293a42f;
+            padding: 10px;
+            border-radius: 20px;
+            list-style-position: inside;
+        }
     </style>
 </head>
 <body>
@@ -143,7 +176,7 @@
         <div class="container2">
             <div class="list">
                 <h2>What i learned in:</h2>
-                    <ul>
+                    <ul id="list">
                       <li><a href="/weeks/weekone.html" target="_blank">Week 1</a></li>
                       <li><a href="/weeks/weektwo.html" target="_blank">Week 2</a></li>
                       <li><a href="/weeks/weekthree.html" target="_blank">Week 3</a></li>
@@ -153,7 +186,7 @@
             <div class="list2">
                 <h2>Watch the videos:</h2>
                    
-                        <ul>
+                        <ul id="list2">
                             <li><a href="https://www.youtube.com/embed/WmcPkcWEIMM" target="videot">Week 1 VIDEO</a></li>
                             <li><a href="https://www.youtube.com/embed/ZBZElM9HpW4" target="videot">Week 2 VIDEO</a></li>
                             <li><a href="https://www.youtube.com/embed/1kVCEh5rc0c" target="videot">Week 3 VIDEO</a></li>
@@ -165,10 +198,10 @@
             </div>
         </div>
     </div>
+<div class="container3">
     <div class="contactform">
-        <div ></div>
         <fieldset>
-            <legend><H3>Fill up this form so i can reach back to you!</H3></legend>
+            <legend><h3>Fill up this form so i can reach back to you!</h3></legend>
         <form action="#">
     
             <label for="name">Name:</label>
@@ -201,7 +234,10 @@
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
         </fieldset>
-        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4961.132639605687!2d21.356512516507756!3d42.32317982089655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135463c9e20a214b%3A0x691452bcae71c61e!2sB%20Mobile%20Service!5e0!3m2!1sen!2s!4v1689759522885!5m2!1sen!2s" width="300px%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
+</div>
 </body>
 </html>
