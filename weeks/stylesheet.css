@@ -1,74 +1,45 @@
-header{
-    text-align: center;
-    
-  }
-    *{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  .parent{
-    display: flex;
-    width: 80%;
-    flex-direction: row;
-    margin: auto;
-  }
-  h1{
-    color: #2292A4;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    text-align: center;
-   }
-  h1>p{
-    font-size: 40%;
-    color: #0F0A0A;
-    font-weight: lighter;
-    
-  }
-  .container-left , .container-right{
-    background-color: #F5EFED;
-    color: #0F0A0A;
-    width: 70%;
-    max-width: 600px;
-    padding: 12px;
-    
-    border-radius: 14px;
-    flex-basis: 50%;
-    margin-left: 30px;
-    
-    
-    
-  }
-  .container-left h1, .container-right h1{
-    text-align: center;
-  }
+:root{
+  --header-font: 'Mukta', sans-serif;
+  --paragraph-font: 'Mukta', sans-serif;
+  --header-weight: bold;
+  --paragraph-weight: normal;
+}
+
+h1{
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+}
+header p{
+  font-family: var(--paragraph-font);
+  font-weight: var(--paragraph-weight);
   
-  td > li {
-    list-style: none;
-    color: #2292A4;
-    font-weight: bold;
-  }
-  @media (max-width: 768px)
-  {
-    .parent{
-        flex-direction: column;
-        
-        
-    }
-    .container-left, .container-right{
-        flex-basis: 100%;
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
-    }
-  }
-    
-  .part2{
-    background-color: #F5EFED;
-    display: inline-box;
-    width: 90%;
-    margin: auto;
-    
-  }
-  .part2 h2{
-    color: #2292A4;
-    text-align: center;
-  }
+}
+header{
+  text-align: center;
+}
+.parent{
+  background-color: beige;
+  width: 100%;
+  text-align: center;
+  list-style-position: inside;
+}
+td > li{
+  list-style-type: none;
+  font-family: var(--header-font);
+  font-weight: var(--header-weight);
+}
+li{
+  text-align: left;
+}
+.container-left{
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+   border: 1px solid red;
+   width:40%;
+}
+.container-right{
+  display: inline-block;
+  border: 1px solid orange;
+  width: 40%;
+}
