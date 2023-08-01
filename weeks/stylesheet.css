@@ -32,7 +32,6 @@ header{
   text-align: center;
 }
 .parent{
-  background-color: #f5efed;
   width: 70%;
   text-align: center;
   list-style-position: inside;
@@ -45,6 +44,7 @@ td > li{
   list-style-type: none;
   font-family: var(--header-font);
   font-weight: var(--header-weight);
+  color: #2293a4;
 }
 li{
   text-align: left;
@@ -54,9 +54,15 @@ li{
   margin-right: 10px;
   display: inline-block;
    width:40%;
+   background-color: #2293a42f;
+   border-radius: 20px;
+   padding: 10px;
 }
 .container-right{
   display: inline-block;
+  background-color: #2293a42f;
+   border-radius: 20px;
+   padding: 10px;
   
   margin-left: 10px;
   width: 40%;
