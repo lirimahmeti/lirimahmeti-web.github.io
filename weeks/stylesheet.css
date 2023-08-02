@@ -3,7 +3,8 @@
   --paragraph-font: 'Mukta', sans-serif;
   --header-weight: bold;
   --paragraph-weight: normal;
-  --important-text-color: ;
+  --important-text-color: #2293a4 ;
+  --default-background-color: #2293a42f;
 }
 
 h1{
@@ -16,7 +17,7 @@ header p{
   font-weight: var(--header-weight);
   display: block;
   background-color: #2293a42f;
-  color: #2293a4;
+  color: var(--important-text-color);
   width: fit-content;
   margin: auto;
   margin-top: 10px;
@@ -56,12 +57,12 @@ li{
 .container-left{
   text-align: center;
   width:100%;
-  background-color: #2293a42f;
+  background-color: var(--default-background-color);
   border-radius: 20px;
 }
 .container-right{
   
-  background-color: #2293a42f;
+  background-color: var(--default-background-color);
   border-radius: 20px;
   width: 100%;
 }
@@ -69,4 +70,23 @@ h1 p {
   font-family: var(--paragraph-font);
   font-weight: var(--paragraph-weight);
   margin-top: -5px;
+}
+.part2{
+  background-color: var(--default-background-color);
+  width: 70%;
+  border-radius: 20px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  margin: 20px auto;
+}
+.header{
+  text-align: center;
+  grid-row: 1;
+  grid-column: 2/span 2;
+}
+.paragraph{
+  text-align: justify;
+  padding: 0px 10px;
+  grid-row:2/3;
+  grid-column: 2/span 2;
 }
