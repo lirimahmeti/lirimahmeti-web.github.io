@@ -36,8 +36,12 @@ header{
   text-align: center;
   list-style-position: inside;
   margin: auto;
-  padding: 30px 0px 30px 0px;
+  gap: 20px;
   border-radius: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  
 
 }
 td > li{
@@ -51,21 +55,15 @@ li{
 }
 .container-left{
   text-align: center;
-  margin-right: 10px;
-  display: inline-block;
-   width:40%;
-   background-color: #2293a42f;
-   border-radius: 20px;
-   padding: 10px;
+  width:100%;
+  background-color: #2293a42f;
+  border-radius: 20px;
 }
 .container-right{
-  display: inline-block;
-  background-color: #2293a42f;
-   border-radius: 20px;
-   padding: 10px;
   
-  margin-left: 10px;
-  width: 40%;
+  background-color: #2293a42f;
+  border-radius: 20px;
+  width: 100%;
 }
 h1 p {
   font-family: var(--paragraph-font);
