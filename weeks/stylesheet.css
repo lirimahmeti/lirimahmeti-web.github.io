@@ -5,6 +5,7 @@
   --paragraph-weight: normal;
   --important-text-color: #2293a4 ;
   --default-background-color: #2293a42f;
+  --header-size: 60px;
 }
 
 h1{
@@ -27,7 +28,7 @@ header p{
 
 }
 header h1{
-  font-size: 60px;
+  font-size: var(--header-size);
 }
 header{
   text-align: center;
