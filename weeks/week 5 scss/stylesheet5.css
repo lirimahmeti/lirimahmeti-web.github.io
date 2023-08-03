@@ -7,7 +7,10 @@
     --default-background-color: #2293a42f;
     --header-size: 60px;
   }
-  
+  p{
+    font-family: var(--paragraph-font);
+    line-height: 20px;
+  }
   h1{
     font-family: var(--header-font);
     font-weight: var(--header-weight);
@@ -36,21 +39,34 @@
   header{
     text-align: center;
   }
+
   main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
+    grid-template: 1fr/1fr 1fr;
+    overflow: hidden;
     justify-items: center;
-    width: 70%;
+    width: 100%;
+    justify-content: space-evenly;
     border-radius: 20px;
-    background-color: var(--default-background-color);
-    
+    background-color: rgba(128, 128, 128, 0.075);
+
+  }
+  .element1 h1, .element2 h1{
+    font-family: var(--paragraph-font);
+    font-weight: var(--header-weight);
+    display: block;
+    background-color: #2293a42f;
+    color: var(--important-text-color);
+    width: fit-content;
+    padding: 5px 5px;
+    border-radius: 5px;
   }
   ul{
     font-family: var(--paragraph-font);
     font-weight: var(--header-weight);
   }
   ul > ul{
+
     font-weight: var(--paragraph-weight);
   }
   section{
