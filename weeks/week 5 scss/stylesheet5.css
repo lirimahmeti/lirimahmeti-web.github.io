@@ -90,6 +90,102 @@
   .list2v, .list0{
     margin-top: 95px;
   }
+  .sticky{
+    width: fit-content;
+    padding: 2px;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: sticky;
+    background-color: var(--default-background-color);
+    color: var(--important-text-color);
+    top: 0px;
+  }
+  .popup{
+    display: inline-block;
+    background-color: var(--default-background-color);
+    color: var(--important-text-color);
+    position: fixed;
+    top: 30px;
+    right: 300px;
+    font-size: 10px;
+    padding: 0px 15px;
+    border-radius: 10px;
+  }
+  .dropdown-menu{
+    position: fixed;
+    top:30px;
+    left: 250px;
+    transition-property: all;
+    transition-delay: 0.01s;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    
+  }
+  .dropdown-menu ul{
+    margin: auto;
+    display: flex;
+    width: 100px;
+    align-content: center;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .hiddenlist{
+    transition-property: all;
+    transition-delay: 0.01s;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  ul .hiddenlist{
+    overflow: hidden;
+    align-content: center;
+    height: 0.1px;
+    width: 130px;
+    background-color: #ebebeb;
+   
+    margin-left: -40px;
+  }
+  .dropdown-menu ul:hover .hiddenlist{
+      height: 20px;
+  }
+  
+  @keyframes myAnim {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+    10% {
+      transform: rotate(8deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+  
+    80% {
+      transform: rotate(-8deg);
+    }
+  
+    90% {
+      transform: rotate(8deg);
+    }
+  }
+  .animations{
+    animation: myAnim 2s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite normal forwards;
+    justify-self: center;
+    text-align: center;
+    color: var(--important-text-color);
+  }
   /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 

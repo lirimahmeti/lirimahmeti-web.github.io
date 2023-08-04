@@ -1,6 +1,6 @@
 
 
-$number-of-containers: 6;
+$number-of-containers: 9;
 
 @for $i from 1 through $number-of-containers{
     $class-name: container#{$i};

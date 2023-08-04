@@ -24,6 +24,7 @@
     </style>
 </head>
 <body>
+   
     <header>
         <h1>Week 5</h1>
         <p>What i learned in week 5:</p>
@@ -108,7 +109,9 @@
        
         
         
-    </main>
+    </main> <div class="sticky">
+        <h1 class="sticky-h1">This is a sticky element</h1>
+    </div>
     <section class="section1">
         <div class="container1">
             <h1>What are pseudo classes used for?</h1>
@@ -129,7 +132,7 @@
         <div class="container5">
             <h1>Ways of displaying elements</h1>
             <p><b>display:inline</b> tells the element to fit itself on the same line. <br><br> <b>display:block</b> Is an element that starts on a new line and takes up the available screen width. You can specify the width and height properties for such elements. <br><br>
-            <b>display:inlin-block</b> Compared to display: block , the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
+            <b>display:inline-block</b> Compared to display: block , the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
         </div>
         <div class="container6">
             <h1>Ways of displaying elements</h1>
@@ -137,8 +140,40 @@
             <p><b>position: absolute</b> changes the position relatively to the viewport</p>
             <p><b>position: fixed</b> same as absolute except that it doesnt change position when scrolling</p>
             <p><b>position: sticky</b> its position remains unchanged while scrolling until the object touches the defined top of the viewport</p>
-            
         </div>
+        <div class="container7">
+            <h1>Visibility of elements</h1>
+            <p><b>visibility: visible</b> changes the position relatively to the object parent</p>
+            <p><b>visibility: hidden</b> changes the position relatively to the viewport</p>
+            <p><b>visibility: collapse</b> same as absolute except that it doesnt change position when scrolling</p>
+            <p><b>visibility: initial</b> its position remains unchanged while scrolling until the object touches the defined top of the viewport</p>
+            <p><b>visibility: inherit</b> its position remains unchanged while scrolling until the object touches the defined top of the viewport</p>
+        </div> 
+        <div class="container8">
+            <h1>Defining CSS variables</h1>
+            <p>Variables in css have the same logic as in every other programming language. They are pretty good tools to use since we can centralize our code and then when we need to make changes we can easily make them from one place. <br><br>Variables in CSS3 are defined in the <b>:root</b> and to define a variable we just write before the variable name this <b>--variable-name: value;</b> </p>
+        </div>
+        <div class="container9">
+            <h1>Importing</h1>
+            <p> We learned about the import and link function. While there are alternatives, CSS <b>@import</b> is the quickest and most accurate way to bring already existing styles from one style sheet to another. <br><br>Another alternative are: <b>Links</b> : Using a <b>link</b> tag to link your CSS files within the header of your HTML allows CSS files to be downloaded rather than called. </p>
+        </div>      
     </section>
+    <div class="popup">
+        <h1>This is a fixed element</h1>
+    </div>
+    <div class="dropdown-menu">
+        <ul>
+            <li>Learn More</li>
+                <ul>
+                    <li class="hiddenlist"><a href="#">Services</a></li>
+                    <li class="hiddenlist"><a href="#">About us</a></li>
+                    <li class="hiddenlist"><a href="#">Contact</a></li>
+                    <li class="hiddenlist"><a href="#">Social Media</a></li>
+                </ul>
+        </ul>
+    </div>
+   
+        <h1 class="animations" >We learned animations!</h1>
+  
 </body>
 </html>
