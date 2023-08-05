@@ -222,15 +222,47 @@ legend h3{
     color: white;
 
 }
+.videot{
+    width: 700px;
+    height: 400px;
+}
+}
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .header{
         width: 300px;
-        grid-template-rows: 100px 70px 100px;
+        grid-template-rows: 100px 60px 90px;
     }
     .tekst, .headline{
         font-size: 27px;
-        line-height: 30px;
+        line-height: 34px;
+    }
+    .permbajtja{
+        background-color: #f5efed;
+        display: grid;
+        grid-template: 50px 200px 400px 1fr/ 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .permbajtja h1{
+        font-size: 30px
+    }
+    .first-paragraph{
+        width: 90%;
+    }
+    .list, .list2{
+        height: fit-content;
+    }
+    .list{
+        grid-row: 4/5;
+    }
+    .list2{
+        grid-row: 3/4;
+    }
+    .videot{
+        width: 300px;
+
     }
 }
 
