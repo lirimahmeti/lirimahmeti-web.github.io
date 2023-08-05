@@ -31,20 +31,28 @@ h1 span{
     color: #2293a4;
     
 }
-.container1{
-    
-    width: fit-content;
+
+.header{   
+    font-family: 'Mukta', sans-serif;
+    line-height: 60px;
+
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 70px 150px;
+    justify-items: center;
     margin: auto;
-    margin-top: 0px;
-    display: flex;
-    padding: -15px 15px 0px -15px;
-    margin-bottom: 30px;
+    align-items: center;
 }
+.tekst{
+    grid-row: 2/3;
+}
+
  .foto img{
     width: 80px;
     border-radius: 50%;
     margin-top: 25px;
-    margin-right: 8px;
+    
 }
 .tekst h2{
     font-size: 50px;
@@ -52,15 +60,7 @@ h1 span{
     font-weight: 400;
     line-height: 50px;
 }
-.header{
-    
-    width: fit-content;
-    margin: auto;
-    margin-top: -30px;
-    font-family: 'Mukta', sans-serif;
-    line-height: 60px;
 
-}
 h1{
     font-size: 50px;
     text-align: center;
@@ -165,3 +165,30 @@ legend h3{
     color: white;
 
 }
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
