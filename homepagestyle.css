@@ -93,9 +93,6 @@ h1{
     text-align: justify;
 }
 .list{
-    position: absolute;
-    top: 550px;
-    right: 500px;
     height: 70px;
     overflow: hidden;
     list-style-position: inside;
@@ -113,9 +110,6 @@ h1{
     height: 250px;
 }
 .list2{
-    position: absolute;
-    top: 550px;
-    left: 500px;
     height: 70px;
     overflow: hidden;
     list-style-position: inside;
