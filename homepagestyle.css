@@ -101,6 +101,7 @@ h1{
     align-self: flex-start;
     text-align: left;
     margin-left: 50px;
+    position: relative;
     transition: all;
     transition-duration: 0.2s;
     transition-delay: 0.03s;
@@ -117,6 +118,8 @@ h1{
     justify-self: flex-end;
     align-self: flex-start;
     text-align: left;
+    grid-row: 3/4;
+    position: relative;
     margin-right: 50px;
     transition: all;
     transition-duration: 0.2s;
