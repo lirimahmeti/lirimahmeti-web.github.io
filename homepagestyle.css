@@ -1,3 +1,10 @@
+:root{
+    --box-shadow; -webkit-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+}
+
+
 *::selection{
     background-color: #2292a4;
     color: white;
@@ -67,38 +74,65 @@ h1{
 }
 .permbajtja{
     background-color: #f5efed;
-    width: 70%;
-    margin: auto;
-    padding: px 40px;
-    text-align: center;
-    border-radius: 20px;
+    display: grid;
+    grid-template: 70px 150px 70px 1fr / 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
 }
-.first-paragraph{
-    width: 60%;
-    margin: auto;
-    text-align: justify;
-}
+
 .permbajtja h1{
+    grid-column: 1 / span 3;
     line-height: 40px;
     padding-top: 30px;
 }
-.container2{
-    display: flex;
-    width: fit-content;
+.first-paragraph{
+    grid-column: 1 / span 3;
+    width:600px ;
     margin: auto;
+    text-align: justify;
 }
 .list{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
     list-style-position: inside;
     width: fit-content;
+    justify-self: flex-start;
+    align-self: flex-start;
     text-align: left;
-    margin-right: 10px;
+    margin-left: 50px;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.03s;
+    transition-timing-function: ease-in-out;
+}
+.list:hover{
+    height: 250px;
 }
 .list2{
-    margin-left: 10px;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    list-style-position: inside;
+    width: fit-content;
+    justify-self: flex-end;
+    align-self: flex-start;
     text-align: left;
+    margin-right: 50px;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.03s;
+    transition-timing-function: ease-in-out;
+    
+}
+.list2:hover{
+    height: 250px;
 }
 .videot{
-    padding: 25px 0px 25px 25px;
+    grid-row: 4 / 5;
+    grid-column: 1 / span 3;
+    justify-self: center;
     
 }
 .container3{
@@ -140,13 +174,35 @@ legend h3{
     width: fit-content;
 }
 #list{
-    background-color: #2293a42f;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
     padding: 10px;
     border-radius: 20px;
     
 }
+.list h2{
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+.list2 h2{
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    padding: 0px 5px;
+    border-radius: 10px;
+}
 #list2{
-    background-color: #2293a42f;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -12px rgba(0,0,0,0.75);
     padding: 10px;
     border-radius: 20px;
     list-style-position: inside;
@@ -167,7 +223,14 @@ legend h3{
 }
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    
+    .header{
+        width: 300px;
+        grid-template-rows: 100px 70px 100px;
+    }
+    .tekst, .headline{
+        font-size: 27px;
+        line-height: 30px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
